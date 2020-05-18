@@ -156,7 +156,6 @@
             renderQuestions(numberQuestion); // Запуск функции рендеринга
             
             const checkAnswer = () => {      // Финальная функция
-                console.log("sdd");
                 const obj = {};
                                 // [...formAnswers.elements] - достать элементы из массива elements и закинуть в новый
                 const inputs = [...formAnswers.elements].filter((input) => input.checked || input.id === 'numberPhone');
@@ -171,7 +170,6 @@
                 });
 
                 finalAnswers.push(obj);
-                console.log(finalAnswers);
             }
             
             nextButton.onclick = () => {    // Кнопка влево
